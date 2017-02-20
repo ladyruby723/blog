@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
+  root 'pages#home'
+  get 'about' => 'pages#about' # this hash rocket creates a key-value connection between the GET action for a page and the page location (path)
+  get 'contact' => 'pages#contact'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
