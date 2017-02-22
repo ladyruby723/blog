@@ -1,2 +1,20 @@
-<h1>My Blog</h1>
-<p>Follow this <a href="#">link</a> to see all blog entries.</p>
+<div class="jumbotron jumbotron-home">
+    <div class="container">
+        <h1>Welcome to my Blog!</h1>
+        <%= link_to "Learn more »", "#", class: "btn btn-secondary btn-lg" %> 
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>One of my Projects</h2>
+            <p>This is a paragraph. Blah blah blah blah I don't know what to put here.</p>
+            <p><%= link_to "Indie Cuisine", "https://indiecuisine.herokuapp.com", class: "btn btn-success" %></p>
+        </div>
+        <div class="col-md-6">
+            <h2>Another Project</h2>
+            <p>Another paragraph....</p>
+            <p><%= link_to "Nucleo", "https://katesapp8.herokuapp.com", class: "btn btn-success" %></p>
+        </div>
+    </div>
+</div>
