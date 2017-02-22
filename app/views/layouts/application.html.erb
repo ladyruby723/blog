@@ -4,12 +4,12 @@
     <title>A Blog (built with the Rails framework)</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= link_to "Home", root_path # using embedded Ruby to create links between pages %>
+    <%= link_to "Home", root_path %>
     <%= link_to "About", about_path %>
     <%= link_to "Contact", contact_path %>
     <%= yield %>
