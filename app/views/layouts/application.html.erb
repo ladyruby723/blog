@@ -14,7 +14,7 @@
     <nav class="navbar navbar-inverse navbar-toggleable-md bg-inverse">
       <div class="container">
         <%= link_to "My Blog", root_path, class: "navbar-brand" %>
-        <ul class="nav navbar-nav">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to "Contact", contact_path, class: "nav-link" %></li>
@@ -23,9 +23,9 @@
             destroy_contributor_session_path, method:delete, class: "nav-link btn btn-secondary" %></li>
           <% else %>
             <li class="nav-item pull-md-right"><%= link_to "Sign up", 
-            new_contributor_registration_path, class: "nav-link btn btn-secondary" %></li>
+            signup_registration_path, class: "nav-link btn btn-secondary" %></li>
             <li class="nav-item pull-md-right"><%= link_to "Sign in", 
-            new_contributor_session_path, class: "nav-link btn btn-secondary" %></li>
+            signin_path, class: "nav-link btn btn-secondary" %></li>
           <% end %>
         </ul>
       </div>
