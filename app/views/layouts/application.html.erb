@@ -20,7 +20,7 @@
           <li class="nav-item"><%= link_to "Contact", contact_path, class: "nav-link" %></li>
           <% if contributor_signed_in? %>
             <li class="nav-item pull-md-right"><%= link_to "Log out", 
-            destroy_contributor_session_path, method:delete, class: "nav-link btn btn-secondary" %></li>
+            signout_path, method: :delete, class: "nav-link btn btn-secondary" %></li>
           <% else %>
             <li class="nav-item pull-md-right"><%= link_to "Sign up", 
             signup_path, class: "nav-link btn btn-secondary" %></li>
