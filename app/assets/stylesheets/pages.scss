@@ -10,11 +10,7 @@
 }
 
 * {
-    font-family: Indie Flower, cursive;
-}
-
-h1, h3, h4 {
-    color: #fafad2;
+    font-family: $myBlog-fontstyle;
 }
 
 h2 {
@@ -27,11 +23,11 @@ a {
 }
 
 p {
-    color: #fafad2;
+    @include myBlog-fontsettings(#fafad2, "Times");
 }
 
 body {
-    background-color: #fafad2;
+    background-color: $body-bg;
 }
 
 .btn {
@@ -45,3 +41,7 @@ body {
     font-style: bold;
     text-align: center center;
 }
+
+// .form-group {
+//     max-width: 200px;
+// }

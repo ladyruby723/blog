@@ -24,12 +24,18 @@ $gray-light:                #818a91;
 $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
-$brand-primary:             #0275d8;
-$brand-success:             #5cb85c;
-$brand-info:                #5bc0de;
-$brand-warning:             #f0ad4e;
-$brand-danger:              #d9534f;
+$brand-primary:             #025D8C;
+$brand-success:             #A1C820;
+$brand-info:                #101F78;
+$brand-warning:             #0A3102;
+$brand-danger:              #223304;
 $brand-inverse:             $gray-dark;
+$myBlog-white:              #fafad2;
+$myBlog-lightgreen:         #A1C820;
+$myBlog-medgreen:           #0A3102;
+$myBlog-darkgreen:          #223304;
+$myBlog-lightblue:          #025D8C;
+$myBlog-deepblue:           #101F78;
 
 
 // Options
@@ -39,7 +45,7 @@ $brand-inverse:             $gray-dark;
 $enable-rounded:            true;
 $enable-shadows:            false;
 $enable-gradients:          false;
-$enable-transitions:        false;
+$enable-transitions:        true;
 
 
 // Spacing
@@ -54,17 +60,17 @@ $border-width: 1px;
 //
 // Settings for the `<body>` element.
 
-$body-bg:    #fff;
-$body-color: $gray-dark;
+$body-bg:    $myBlog-medgreen;
+$body-color: $myBlog-white;
 
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:            $brand-primary;
+$link-color:            $brand-info;
 $link-decoration:       none;
-$link-hover-color:      darken($link-color, 15%);
+$link-hover-color:      darken($link-color, 25%);
 $link-hover-decoration: underline;
 
 
@@ -73,8 +79,8 @@ $link-hover-decoration: underline;
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif;
-$font-family-base:       $font-family-sans-serif;
+$font-family-serif:      "Indie Flower", Georgia, "Times New Roman", Times, serif;
+$font-family-base:       $font-family-serif;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 16px;
@@ -99,6 +105,12 @@ $headings-font-weight:   500;
 $headings-line-height:   1.1;
 $headings-color:         inherit;
 
+@mixin myBlog-fontsettings($font-color, $font-family) {
+    font-color: $font-color;
+    font-family: $font-family;
+}
+
+$myBlog-fontstyle: ("Indie Flower", cursive);
 
 // Components
 //
@@ -107,7 +119,7 @@ $headings-color:         inherit;
 $line-height-lg:         (4 / 3);
 $line-height-sm:         1.5;
 
-$border-radius:          .25rem;
+$border-radius:          .2rem;
 $border-radius-lg:       .3rem;
 $border-radius-sm:       .2rem;
 
@@ -119,13 +131,13 @@ $navbar-padding-x:                  $spacer;
 $navbar-padding-y:                  ($spacer / 2);
 $navbar-brand-padding-y:            .25rem;
 
-$navbar-dark-color:                 rgba(255,255,255,.5);
+$navbar-dark-color:                 rgba(10,49,2,.5);
 $navbar-dark-hover-color:           rgba(255,255,255,.75);
-$navbar-dark-active-color:          rgba(255,255,255,1);
-$navbar-dark-disabled-color:        rgba(255,255,255,.25);
+$navbar-dark-active-color:          $myBlog-white;
+$navbar-dark-disabled-color:        rgba(34,51,4,1);
 
 $navbar-light-color:                rgba(0,0,0,.3);
-$navbar-light-hover-color:          rgba(0,0,0,.6);
+$navbar-light-hover-color:          rgba(250,250,210,1);
 $navbar-light-active-color:         rgba(0,0,0,.8);
 $navbar-light-disabled-color:       rgba(0,0,0,.15);
 
@@ -133,4 +145,4 @@ $navbar-light-disabled-color:       rgba(0,0,0,.15);
 // Jumbotron
 
 $jumbotron-padding:              2rem;
-$jumbotron-bg:                   $gray-lighter;
+$jumbotron-bg:                   $myBlog-white;
