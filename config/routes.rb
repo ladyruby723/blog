@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   devise_for :contributors
   as :contributor do 
     get "signin" => 'devise/sessions#new'
