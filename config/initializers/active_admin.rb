@@ -86,7 +86,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # (within the application controller) to return the currently logged in user.
-  config.current_user_method = :current_admin_user
+  config.current_user_method = :current_admin_contributor
 
   # == Logging Out
   #
@@ -98,7 +98,7 @@ ActiveAdmin.setup do |config|
   # will call the method to return the path.
   #
   # Default:
-  config.logout_link_path = :destroy_user_session_path #this is the logout link in the admin section.
+  config.logout_link_path = :destroy_contributor_session_path #this is the logout link in the admin section.
 
   # This setting changes the http method used when rendering the
   # link. For example :get, :delete, :put, etc..
