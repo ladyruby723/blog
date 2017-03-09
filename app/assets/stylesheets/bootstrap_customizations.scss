@@ -19,10 +19,10 @@
 // Grayscale and brand colors for use across Bootstrap.
 
 $gray-dark:                 #373a3c;
-$gray:                      #55595c;
-$gray-light:                #818a91;
-$gray-lighter:              #eceeef;
-$gray-lightest:             #f7f7f9;
+// $gray:                      #55595c;
+// $gray-light:                #818a91;
+// $gray-lighter:              #eceeef;
+// $gray-lightest:             #f7f7f9;
 
 $brand-primary:             #025D8C;
 $brand-success:             #A1C820;
@@ -43,8 +43,8 @@ $myBlog-deepblue:           #101F78;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-rounded:            true;
-$enable-shadows:            false;
-$enable-gradients:          false;
+$enable-shadows:            true;
+$enable-gradients:          true;
 $enable-transitions:        true;
 
 
@@ -53,14 +53,14 @@ $enable-transitions:        true;
 // Control the default styling of most Bootstrap elements by modifying these variables.
 
 $spacer:   1rem;
-$border-width: 1px;
+$border-width: 3px;
 
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-bg:    $myBlog-medgreen;
+$body-bg:    $brand-warning;
 $body-color: $myBlog-white;
 
 
@@ -68,7 +68,7 @@ $body-color: $myBlog-white;
 //
 // Style anchor elements.
 
-$link-color:            $brand-info;
+$link-color:            $myBlog-white;
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 25%);
 $link-hover-decoration: underline;
@@ -136,13 +136,14 @@ $navbar-dark-hover-color:           rgba(255,255,255,.75);
 $navbar-dark-active-color:          $myBlog-white;
 $navbar-dark-disabled-color:        rgba(34,51,4,1);
 
-$navbar-light-color:                rgba(0,0,0,.3);
+$navbar-light-color:                rgba(250,250,210,1);
 $navbar-light-hover-color:          rgba(250,250,210,1);
-$navbar-light-active-color:         rgba(0,0,0,.8);
-$navbar-light-disabled-color:       rgba(0,0,0,.15);
+$navbar-light-active-color:         rgba(34,51,4,1);
+$navbar-light-disabled-color:       rgba(34,51,4,1);
 
 
 // Jumbotron
 
 $jumbotron-padding:              2rem;
 $jumbotron-bg:                   $myBlog-white;
+

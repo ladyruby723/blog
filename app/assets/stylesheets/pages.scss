@@ -13,34 +13,9 @@
     font-family: $myBlog-fontstyle;
 }
 
-h2 {
-    color: black;
-}
-
-a {
-    color: darkslateblue;
-    text-decoration: none;
-}
-
-p {
-    @include myBlog-fontsettings(#fafad2, "Times");
-}
-
-body {
-    background-color: $body-bg;
-}
-
-.btn {
-    border-radius: 20%;
-    border: 5px ridge #223304;
-    color: #223304;
-    background-color: #fafad2;
-    height: 50px;
-    width: 150px;
-    font-size: 20px;
-    font-style: bold;
-    text-align: center center;
-}
+// p {
+//     @include myBlog-fontsettings(#fafad2, $myBlog-fontstyle);
+// }
 
 // .form-group {
 //     max-width: 200px;
