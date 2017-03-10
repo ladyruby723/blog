@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   ActiveAdmin.routes(self)
   devise_for :contributors
   as :contributor do 
