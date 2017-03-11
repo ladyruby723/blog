@@ -12,6 +12,10 @@
 * {
     font-family: $myBlog-fontstyle;
 }
+.navbar-brand {
+    padding: 5px;
+    font-size: 25px;
+}
 
 // p {
 //     @include myBlog-fontsettings(#fafad2, $myBlog-fontstyle);
