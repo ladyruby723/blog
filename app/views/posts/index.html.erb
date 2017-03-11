@@ -1,31 +1,34 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<h1>Posts</h1>
+  <h1>Posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Contributor</th>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
+  <table class="table table-inverse">
+    <thead class="thead-inverse">
       <tr>
-        <td><%= post.contributor %></td>
-        <td><%= post.title %></td>
-        <td><%= post.content %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure you want to delete this post?' } %></td>
+        <th>Contributor</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+  <%#'post' is short for post_path(post) below:%>
 
-<%= link_to 'New Post', new_post_path %>
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          <td><%= post.contributor %></td>
+          <td><%= post.title %></td>
+          <td><%= post.content %></td>
+          <td><%= link_to 'Show', post %></td>
+          <td><%= link_to 'Edit', edit_post_path(post) %></td>
+          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure you want to delete this post?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Post', new_post_path %>
+</div>
