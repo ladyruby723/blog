@@ -45,12 +45,12 @@ ActiveRecord::Schema.define(version: 20170309013558) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.integer  "contributor_id"
+    t.integer  "user_id"
     t.text     "title"
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["contributor_id"], name: "index_posts_on_user_id"
+    t.index ["user"], name: "index_posts_on_user_id"
   end
 
 end
