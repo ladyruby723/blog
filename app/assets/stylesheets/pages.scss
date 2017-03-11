@@ -7,14 +7,20 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    min-height: 500px;
 }
 
 * {
-    font-family: $myBlog-fontstyle;
+    font-family: 'Rancho', cursive;
 }
+
 .navbar-brand {
     padding: 5px;
     font-size: 25px;
+}
+
+li {
+    padding: 5px;
 }
 
 // p {

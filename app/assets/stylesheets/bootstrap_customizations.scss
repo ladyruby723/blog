@@ -79,9 +79,43 @@ $link-hover-decoration: none;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-family-serif:      "Indie Flower", Georgia, "Times New Roman", Times, serif;
-$font-family-base:       $font-family-serif;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Montserrat Subrayada", "Kite One", Rationale, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      "Aref Ruqaa", Inika, "Cormorant SC", "Indie Flower", Georgia, "Times New Roman", Times, serif;
+$font-family-cursive:   Kalam, Handlee, Chewy, Boogaloo, "Coming Soon", "Bad Script", "Rancho", "Reenie Beanie", Caveat, "Cabin Sketch", cursive;
+$font-family-base:       $font-family-cursive;
+
+// $font-family: 'Kalam', cursive;
+// $font-family: 'Handlee', cursive;
+// $font-family: 'Chewy', cursive;
+// $font-family: 'Boogaloo', cursive;
+// $font-family: 'Coming Soon', cursive;
+// $font-family: 'Bad Script', cursive;
+// $font-family: 'Shadows Into Light Two', cursive;
+// $font-family: 'Rancho', cursive;
+// $font-family: 'Reenie Beanie', cursive;
+// $font-family: 'Caveat', cursive;
+// $font-family: 'Cabin Sketch', cursive;
+// $font-family: 'Caveat Brush', cursive;
+// $font-family: 'Fredericka the Great', cursive;
+// $font-family: 'Merienda', cursive;
+// $font-family: 'Tillana', cursive;
+// $font-family: 'Bungee Shade', cursive;
+// $font-family: 'Yatra One', cursive;
+// $font-family: 'Finger Paint', cursive;
+// $font-family: 'Loved by the King', cursive;
+// $font-family: 'Patrick Hand SC', cursive;
+// $font-family: 'Simonetta', cursive;
+// $font-family: 'Sniglet', cursive;
+// $font-family: 'Londrina Outline', cursive;
+// $font-family: 'Medula One', cursive;
+// $font-family: 'Rationale', sans-serif;
+// $font-family: 'Kite One', sans-serif;
+// $font-family: 'Aref Ruqaa', serif;
+// $font-family: 'Inika', serif;
+// $font-family: 'Montserrat Subrayada', sans-serif;
+// $font-family: 'Cormorant SC', serif;
+// $font-family: 'Miltonian', cursive;
+// $font-family: 'Warnes', cursive;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 18px;
@@ -101,7 +135,7 @@ $font-size-h5: 1.5rem;
 $font-size-h6: 1.25rem;
 
 $headings-margin-bottom: ($spacer / 2);
-$headings-font-family:   inherit;
+$headings-font-family:   'Boogaloo', cursive;
 $headings-font-weight:   500;
 $headings-line-height:   1.1;
 $headings-color:         inherit;
@@ -120,7 +154,7 @@ $myBlog-fontstyle: ("Indie Flower", cursive);
 $line-height-lg:         (4 / 3);
 $line-height-sm:         1.5;
 
-$border-radius:          .2rem;
+$border-radius:          .7rem;
 $border-radius-lg:       .3rem;
 $border-radius-sm:       .2rem;
 
