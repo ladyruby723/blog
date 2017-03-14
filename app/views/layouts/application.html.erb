@@ -21,17 +21,17 @@
           <em><li class="nav-item"><%= link_to "About", about_path, class: "navbar-brand" %></li></em>
           <em><li class="nav-item"><%= link_to "Contact", contact_path, class: "navbar-brand" %></li></em>
         </ul>
-        <ul class="navbar-nav">
-          <% if contributor_signed_in? %>
-            <li class="nav-item pull-md-right"><%= link_to "Log out", 
-            signout_path, method: :delete, class: "btn btn-secondary" %></li>
-          <% else %>
-              <li class="nav-item pull-md-right"><%= link_to "Sign up", 
-              signup_path, class: "btn btn-secondary" %></li>
-              <li class="nav-item pull-md-right"><%= link_to "Sign in", 
-              signin_path, class: "btn btn-secondary" %></li>
-          <% end %>
-        </ul>
+        <!-- <ul class="navbar-nav">
+           <% if contributor_signed_in? %>
+             <li class="nav-item pull-md-right"><%= link_to "Log out", 
+             signout_path, method: :delete, class: "btn btn-secondary" %></li>
+           <% else %>
+               <li class="nav-item pull-md-right"><%= link_to "Sign up", 
+               signup_path, class: "btn btn-secondary" %></li>
+               <li class="nav-item pull-md-right"><%= link_to "Sign in", 
+               signin_path, class: "btn btn-secondary" %></li>
+           <% end %>
+         </ul> -->
       </div>
     </nav>
 
