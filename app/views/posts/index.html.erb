@@ -20,6 +20,10 @@
               <h6 class="list-group-item-text"><%= post.title %></h6>
               <p class="list-group-item-text"><%= post.content %></p>
               <%= link_to 'Show', post %>
+              <% if post.contributor == current_contributor %>
+                <li><%= link_to 'Edit', edit_post_path(post) %></li>
+                <li><%= link_to 'Delete', post, method: :delete, data: {confirm: 'Are you sure you want to delete this post?' } %></li>
+              <% end %>
           <% end %>
         <% end %>
       </ul>
