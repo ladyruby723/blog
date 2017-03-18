@@ -1,4 +1,32 @@
 <div class="container">
-    <h1><%= @contributor.username %></h1>
-    <p><%= @contributor.name %></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card card-block">
+        <h4 class="card-title"><%= @contributor.username %></h4>
+        <p class="card-text"><%= @contributor.name %></p>
+      </div>
+    </div>
+    <div class="col-md-8">
+
+      <%#'post' is short for post_path(post) below:%>
+      <ul class="list-group">
+          <% @posts.each do |post| %>
+            <%= link_to post, class: "list-group-item list-group-item-action" do %>
+              <h5 class="list-group-item-heading"><%= post.contributor.username %></h5>
+              <h6 class="list-group-item-text"><%= post.title %></h6>
+              <p class="list-group-item-text"><%= post.content %></p>
+              <%= link_to 'Show', post %>
+              <% if post.contributor == current_contributor %>
+                <li><%= link_to 'Edit', edit_post_path(post) %></li>
+                <li><%= link_to 'Delete', post, method: :delete, data: {confirm: 'Are you sure you want to delete this post?' } %></li>
+              <% end %>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <br>
+
+  <%= link_to 'New Post', new_post_path %>
 </div>
