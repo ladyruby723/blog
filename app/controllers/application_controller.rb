@@ -6,9 +6,9 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, alert: exception.message #if admin access denied to user/contributor, display exception message in browser.
   end
 
-protected
+  protected
 
-  def :configure_permitted_parameters
+  def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username])
   end
 end

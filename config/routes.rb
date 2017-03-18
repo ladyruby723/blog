@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contributors/:username', to: "contributors#show"
+
   resources :posts
   ActiveAdmin.routes(self)
   devise_for :contributors
