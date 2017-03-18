@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'contributors/:username', to: 'contributors#show', as: 'user'
+  get 'contributors/:username', to: 'contributors#show', as: 'contributor'
 
   resources :posts
   ActiveAdmin.routes(self)
